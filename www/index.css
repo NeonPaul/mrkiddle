@@ -3,59 +3,59 @@
   padding:0;
 }
 
+html,body{
+  min-height: 100%;
+}
+
 html{
   width:100%;
   background:#CCC url(images/rock-bg.jpg);
 }
+
 body{
   width:960px;
   margin:0 auto;
   font-family:sans-serif;
   background:rgba(256,256,256,0.9);
+  text-align: center;
 }
-p,ul{
-  margin:0 0 18px;
-  line-height:27px;
-  font-size:16px;
-  color:#333;
-}
+
 h1{
   font-size:24px;
   line-height:36px;
   margin:0 0 18px;
 }
-h2{
-  font-size:18px;
-  line-height:18px;
-  margin:0 0 18px;
-}
+
 h3{
   font-size:12px;
   line-height:18px;
 }
-ul, 
-ol { 
-  margin: 0 0 18px 18px;
-}
+
 .logo{
   float:left;
   height:90px;
 }
+
 header{
+  text-align: left;
+  display: inline-block;
   text-transform:uppercase;
   padding:27px;
   overflow:hidden;
 }
+
 header h3{
   font-size:36px;
   line-height:36px;
   margin-left:3px;
 }
+
 hgroup{
   margin-left:90px;
 }
+
 header h1{
-  font-size:72px;
+  font-size:70px;
   line-height:54px;
   margin-bottom:0;
   letter-spacing:-5px;
@@ -64,6 +64,7 @@ header h1{
 section{
   padding:0 27px;
 }
+
 section:not(:last-of-type){
   margin-bottom:27px;
 }
@@ -72,94 +73,21 @@ section:not(:last-of-type){
   overflow:hidden;
 }
 
-.col2{
-  width:162px;
-  float:right;
-}
-
-.callout{
-  border:1px solid black;
-  background:#CCC;
-  width:178px;
-  height:178px;
-  margin:0 0 18px 18px;
-  display:block;
-  float:right;
-  position:relative;
-  overflow:hidden;
-  border-radius:18px;
-  clear:both;
-}
-.callout.left{
-  float:left;
-  margin: 0 18px 18px 0;
-}
-.callout:hover::after{
-  content:attr(title);
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.5);
-  color:white;
-  display:block;
-  padding:9px;
-  font-weight:bold;
-  border-radius:0 0 18px 18px;
-}
-.callout img{
-  max-width:100%;
-  border-radius:18px;
-}
-
 section.attention{
   width:75%;
   margin:18px auto 54px;
   border:1px solid white;
   border-radius:36px;
   background:white;
-}
-section.attention h1{
-  font-size:36px;
-  margin-top:18px;
-  width:66%;
-  margin-left:auto;
-  margin-right:auto;
-}
-p.grab{
-  width:66%;
-  margin:0 auto 18px;
-  line-height:36px;
-  font-size:24px;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
 }
 
-nav{
-  width:280px;
-  float:right;
-  margin-top:0px;
-  padding-top:9px;
-}
-
-nav ul{
-  line-height:27px;
-  font-size:18px;
-}
-
-.contact{list-style:none;}
-.contact img{
-  width:18px;
-  vertical-align:middle;
-}
-
-.contact img.sml{
-  width:12px;
-  padding-left:3px;
-  padding-right:3px;
-}
 a{
-  color:#44F;
   text-decoration:none;
+  color: #3b94d9;
 }
 a:hover{
-  color:#00F;
+  text-decoration: underline;
 }
