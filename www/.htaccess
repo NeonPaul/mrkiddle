@@ -1,9 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine on
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond /home/mrkiddle/old%{REQUEST_URI} -f
-RewriteRule ^(.*)$ http://old.mrkiddle.co.uk/$1 [R=301,L]
-
-RewriteRule ^blog(/.*)?$ http://blog.mrkiddle.co.uk/$1 [R=301,L]
