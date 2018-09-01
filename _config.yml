@@ -1,1 +1,2 @@
 exclude: [package.json]
+include: [.well-known]

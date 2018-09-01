@@ -1,0 +1,11 @@
+{
+	"subject": "acct:paul@mrkiddle.co.uk",
+
+	"links": [
+		{
+			"rel": "self",
+			"type": "application/activity+json",
+			"href": "https://mrkiddle.co.uk/actor.json"
+		}
+	]
+}
