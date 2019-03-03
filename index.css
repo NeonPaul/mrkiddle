@@ -1,3 +1,10 @@
+/*
+bg: #112530
+lemon: #fed700
+leaf1: #1f823f
+leaf2: #176861
+*/
+
 *{
   margin:0;
   padding:0;
@@ -9,15 +16,21 @@ html,body{
 
 html{
   width:100%;
-  background:#CCC url(images/rock-bg.jpg);
+  background: #112530 url(/lemons.jpg);
+  background-attachment: fixed;
+  color: black;
+  display: grid;
+  justify-content: space-around;
 }
 
 body{
-  width:960px;
-  margin:0 auto;
   font-family:sans-serif;
-  background:rgba(256,256,256,0.9);
-  text-align: center;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
 }
 
 h1{
@@ -31,27 +44,33 @@ h3{
   line-height:18px;
 }
 
+
+
 .logo{
-  float:left;
-  height:90px;
+  display: flex;
 }
 
-header{
-  text-align: left;
-  display: inline-block;
-  text-transform:uppercase;
-  padding:27px;
-  overflow:hidden;
+.logo img {
+  height: 90px;
+}
+
+ul {
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+header, section{
+  background:#1f823f;
+  border: 10px double #fed700;
+  border-radius: 20px;
+  margin: 2em;
+  padding: 2em;
 }
 
 header h3{
   font-size:36px;
   line-height:36px;
   margin-left:3px;
-}
-
-hgroup{
-  margin-left:90px;
 }
 
 header h1{
@@ -61,38 +80,9 @@ header h1{
   letter-spacing:-5px;
 }
 
-section{
-  padding:0 27px;
-}
-
-section:not(:last-of-type){
-  margin-bottom:27px;
-}
-
-.main{
-  overflow:hidden;
-}
-
-section.attention{
-  width:75%;
-  margin:18px auto 54px;
-  border:1px solid white;
-  border-radius:36px;
-  background:white;
-  display:flex;
-  justify-content:space-around;
-  text-align:center;
-}
-
 a{
-  text-decoration:none;
-  color: #3b94d9;
+  color: #ffe550;
 }
 a:hover{
-  text-decoration: underline;
-}
-
-ul {
-  text-align: left;
-  display: inline-block;
+  text-decoration: dashed;
 }
