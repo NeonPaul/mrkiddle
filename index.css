@@ -16,7 +16,9 @@ html,body{
 
 html{
   width:100%;
-  background: #112530 url(/lemons.jpg);
+  background: #112530;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5b/Hypercam_2_watermark.png), url(/lemons.jpg);
+  background-repeat: no-repeat, repeat;
   background-attachment: fixed;
   color: black;
   display: grid;
